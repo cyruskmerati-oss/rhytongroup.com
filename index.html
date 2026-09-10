@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rhyton Group LLC</title>
+<meta name="description" content="Rhyton Group builds CliniCall, a documentation assistant that helps medical practices turn patient calls and voicemails into draft notes for staff review.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a5bd3'/%3E%3Ctext x='32' y='44' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='700' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#ffffff;
+    --soft:#f4f8ff;
+    --border:#dce8f5;
+    --blue:#0a5bd3;
+    --blue-dark:#08469f;
+    --text:#0d1117;
+    --muted:#4a5a6c;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  header{border-bottom:1px solid var(--border)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .mark{font-size:19px;font-weight:700;letter-spacing:-.03em;color:var(--text);text-decoration:none}
+  .mark span{color:var(--blue)}
+  .navlink{font-size:15px;font-weight:600;color:var(--muted);text-decoration:none;
+    transition:color .18s var(--ease)}
+  .navlink:hover{color:var(--blue)}
+
+  .hero{padding:96px 0 88px}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--blue);margin:0 0 18px}
+  h1{font-size:clamp(34px,5.4vw,56px);line-height:1.08;letter-spacing:-.035em;
+    font-weight:700;margin:0 0 22px;max-width:15ch}
+  .lede{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:40ch;margin:0 0 34px}
+  .btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;
+    font-weight:600;font-size:16px;padding:13px 24px;border-radius:10px;
+    transition:background .18s var(--ease),transform .15s var(--ease)}
+  .btn:hover{background:var(--blue-dark)}
+  .btn:active{transform:scale(.97)}
+  .btn:focus-visible,.navlink:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(10,91,211,.35);border-radius:10px}
+
+  section.band{background:var(--soft);border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);padding:80px 0}
+  h2{font-size:clamp(26px,3.2vw,34px);letter-spacing:-.025em;line-height:1.15;margin:0 0 12px}
+  .sub{color:var(--muted);margin:0 0 44px;max-width:52ch}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:26px 26px 24px}
+  .card h3{font-size:18px;letter-spacing:-.015em;margin:0 0 8px}
+  .card p{margin:0;color:var(--muted);font-size:16px}
+
+  .about{padding:80px 0}
+  .about p{color:var(--muted);max-width:60ch;margin:0 0 14px}
+
+  .contact{padding:0 0 96px}
+  .contactbox{border:1px solid var(--border);border-radius:18px;padding:40px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .contactbox h2{margin:0 0 6px}
+  .contactbox p{margin:0;color:var(--muted)}
+
+  footer{border-top:1px solid var(--border);padding:28px 0;font-size:14px;color:var(--muted)}
+
+  @media (max-width:720px){
+    .hero{padding:64px 0 60px}
+    .grid{grid-template-columns:1fr}
+    section.band,.about{padding:60px 0}
+    .contactbox{padding:28px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition-duration:.001ms !important}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="/">Rhyton <span>Group</span></a>
+    <a class="navlink" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Clinical documentation software</p>
+    <h1>Less time writing up calls. More time for patients.</h1>
+    <p class="lede">Rhyton Group builds CliniCall, a documentation assistant that helps medical practices turn patient phone calls and voicemails into draft notes that staff review.</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>What CliniCall does</h2>
+      <p class="sub">Built for the front office of a busy practice, where every call needs to be written up accurately.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Voicemail transcription</h3>
+          <p>Messages left for the practice are transcribed automatically, so staff can read a voicemail instead of replaying it.</p>
+        </div>
+        <div class="card">
+          <h3>Draft notes for review</h3>
+          <p>A draft chief complaint and history is prepared from what the patient said, ready for staff to check and edit.</p>
+        </div>
+        <div class="card">
+          <h3>A person reviews every note</h3>
+          <p>Nothing is passed along automatically. Every draft is read and approved by a member of staff first.</p>
+        </div>
+        <div class="card">
+          <h3>English and Farsi</h3>
+          <p>Designed for bilingual practices, including English translation of messages left in Farsi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>Rhyton Group LLC is a software company based in California, founded in 2026.</p>
+      <p>We build tools that reduce the documentation work around patient communication, so clinical teams can spend less of their day transcribing and more of it caring for patients.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contactbox">
+        <div>
+          <h2>Contact</h2>
+          <p>Questions, or interested in CliniCall for your practice?</p>
+        </div>
+        <a class="btn" href="mailto:cyruskmerati@gmail.com">cyruskmerati@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Rhyton Group LLC &middot; California</div>
+</footer>
+
+</body>
+</html>
